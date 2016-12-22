@@ -31,6 +31,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 #WORKDIR tests-$GENESIS_VERSION/regression_test/
 #python test.py "mpirun --allow-run-as-root -np 8 /work/genesis-$GENESIS_VERSION/bin/spdyn"
 
-ENV PATH /work/genesis/bin:$PATH
+#ENV PATH /work/genesis/bin:$PATH
 WORKDIR /work/
 
