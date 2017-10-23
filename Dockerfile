@@ -32,7 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN groupadd -r yasu && useradd -r -g yasu yasu
 
-RUN echo x=1\:0.1:10\; y=sin\(t\)\; plot\(x,y\) >/home/yasu/.octave_hist
+# RUN echo x=1\:0.1:10\; y=sin\(t\)\; plot\(x,y\) >/home/yasu/.octave_hist
 
 USER yasu
 WORKDIR /home/yasu
