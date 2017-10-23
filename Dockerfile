@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     octave \
     liboctave-dev \
     git \
+    automake \
     autoconf \
   && apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
